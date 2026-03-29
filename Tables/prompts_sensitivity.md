@@ -17,4 +17,4 @@
 | Intermediate Action acc     | 0.8443      | 0.8932              | 0.8057       | 0.8439       |
 | Final action acc | 0.9157    | 0.9128              | 0.8735       | 0.8383       |
 
-Table 1 *Single beliefs: Spearman correlation; Pairwise: Spearman correlation and corresponding p-values*
+**Table 1.** Comparison across prompting strategies. *Single beliefs are evaluated using Spearman correlation; pairwise results report Spearman correlation and corresponding p-values.*
