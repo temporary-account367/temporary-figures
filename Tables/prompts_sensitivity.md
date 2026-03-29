@@ -14,5 +14,5 @@
 | p value 5      | 5.64E-08    | 5.34E-07            | 2.92E-06     | 5.37E-06     |
 | Pairwise correlation | 0.6643 | 0.6179             | 0.4036       | 0.4071       |
 | Pairwise p value     | 6.91E-03 | 1.41E-02         | 1.36E-01     | 1.32E-01     |
-| Action acc     | 0.8443      | 0.8932              | 0.8057       | 0.8439       |
+| Intermediate Action acc     | 0.8443      | 0.8932              | 0.8057       | 0.8439       |
 | Final action acc | 0.9157    | 0.9128              | 0.8735       | 0.8383       |
