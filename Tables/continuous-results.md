@@ -17,4 +17,4 @@
 | Action acc | 0.8443 | 8.68E-01 |
 | Final action acc | 0.9157 | 8.47E-01 |
 
-<sub>Table X. Results on modeling beliefs as continuous variables.</sub>
+Table X. Results on modeling beliefs as continuous variables.
