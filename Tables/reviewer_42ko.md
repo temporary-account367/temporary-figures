@@ -18,7 +18,7 @@
 | Final action acc | 0.9041 | 0.914     | 0.9157                 | 0.8683     | 0.8414     |
 
 **Table 1.** Ablation study on the number of beliefs $K \in \{2,4,6,10,15\}$. Single beliefs are evaluated using Spearman correlation with corresponding p-values; pairwise results report Spearman correlation and p-values.
-
+<br>
 
 |                | First person | Few-shots prompting | CoT prompting | Third person |
 |----------------|-------------|---------------------|--------------|--------------|
@@ -41,9 +41,19 @@
 
 **Table 2.** Comparison across prompting strategies. *Single beliefs are evaluated using Spearman correlation; pairwise results report Spearman correlation and corresponding p-values.*
 
+
 | Metric           | BigToM | Our Model (Qwen 8B) | Our Model (Llama3 70B) | AutoToM (Qwen 8B) | AutoToM (Llama 70B) |
 |------------------|--------|----------------------|-------------------------|-------------------|---------------------|
 | Action accuracy  | 0.825  | 0.86                 | 0.86                    | 0.7               | 0.87                |
 | Belief accuracy  | 0.6125 | 0.6375               | 0.6375                  | 0.695             | 0.975               |
 
 **Table 3.** Comparison our model with ToM method AutoToM on BigToM benchmark.
+
+
+| Belief interventions | Inter action flip rate | Inter action probability change | Final action flip rate | Final action probability change |
+|----------------------|------------------------|----------------------------------|------------------------|----------------------------------|
+| Flipping extreme beliefs (b < 0.2 → 1, b > 0.8 → 0) | 0.6508 | 0.2869 | 0.1633 | 0.2408 |
+| Flipping neutral beliefs (0.4 < b < 0.5 → 1, 0.5 < b < 0.6 → 0) | 0.164 | 0.055 | 0.0306 | 0.0538 |
+
+**Table 4.** Belief intervention test. Flip beliefs in twon manners then check the change of Intermediate Action and Final Action.
+
