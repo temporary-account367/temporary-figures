@@ -50,6 +50,7 @@
 | Belief Inference Time (s) | 0.003031 | 0.003165 | 0.003718 | 0.001569 | 0.018991 | 0.001895 | 0.031219 | 0.002751 | 0.043742 |
 
 **Tabel 3.** Extend the number of beliefs to K=10,15, and test the approximation methods.
+<br><br>
 
 
 | Metric               |     QW8B |    QW32B |    QW72B | Llama3 8B   |   Llama3 70B |   DeepseekR1_70B |
