@@ -152,7 +152,7 @@
 | Inter macro-F1       | 0.1629   |  0.1182   |  0.1766   |      0.1433   |       0.1182   |           0.2287   |
 | Final macro-F1       | 0.4079   |  0.4079   |  0.4079   |      0.4079   |       0.4079   |           0.4204   |
 
-**Table 5.3** Plain LLM's performance across different LLM benchmarks.
+**Table 5.4** Plain LLM's performance across different LLM benchmarks.
 <br><br>
 
 | Metric               |   QW8B.4 |   QW32B.4 |   QW72B.4 |   Llama3 8B.4 |   Llama3 70B.4 |   DeepseekR1_70B.4 |
@@ -176,4 +176,4 @@
 | Inter macro-F1       | 0.4104   |  0.4492   |  0.3409   |      0.462    |       0.4488   |           0.4221   |
 | Final macro-F1       | 0.7741   |  0.6556   |  0.5448   |      0.6249   |       0.6964   |           0.6016   |
 
-**Table 5.4** FLARE's performance across different LLM benchmarks.
+**Table 5.5** FLARE's performance across different LLM benchmarks.
