@@ -249,5 +249,12 @@
 | Final action acc | 0.9157 | 8.47E-01 |
 
 **Table 8**. Results on modeling beliefs as continuous variables.
+<br><br>
 
 
+| Metric              | Our Model           | AutoToM            | FLARE              | Plain LLM          | Reconciliation     |
+|---------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| Intermediate Action | 0.8542 ± 0.0074    | 0.3813 ± 0.0049    | 0.6791 ± 0.0145    | 0.2773 ± 0.0273    | 0.3908 ± 0.1117    |
+| Final Action        | 0.9017 ± 0.0195    | 0.6643 ± 0.0226    | 0.8038 ± 0.0200    | 0.6888 ± 0.0000    | 0.6472 ± 0.0238    |
+
+**Table 9.** Action prediction performance (mean ± std).
