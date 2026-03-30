@@ -58,6 +58,13 @@
 **Table 4.** Belief intervention test. Flip beliefs in twon manners then check the change of Intermediate Action and Final Action.
 <br><br>
 
+| Metric              | Our Model           | AutoToM            | FLARE              | Plain LLM          | Reconciliation     |
+|---------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| Intermediate Action | 0.8542 ± 0.0074    | 0.3813 ± 0.0049    | 0.6791 ± 0.0145    | 0.2773 ± 0.0273    | 0.3908 ± 0.1117    |
+| Final Action        | 0.9017 ± 0.0195    | 0.6643 ± 0.0226    | 0.8038 ± 0.0200    | 0.6888 ± 0.0000    | 0.6472 ± 0.0238    |
+
+**Table 5.** Action prediction performance (mean ± std).
+
 
 | Metric               |     QW8B |    QW32B |    QW72B | Llama3 8B   |   Llama3 70B |   DeepseekR1_70B |
 |:---------------------|---------:|---------:|---------:|:------------|-------------:|-----------------:|
@@ -80,7 +87,7 @@
 | Inter macro-F1       | 0.796    | 0.931    | 0.7855   | 0.5842      |     0.9456   |         0.9133   |
 | Final macro-F1       | 0.9023   | 0.9368   | 0.9      | 0.8392      |     0.9151   |         0.95     |
 
-**Table 5.1** Our Model's performance across different LLM benchmarks.
+**Table 6.1** Our Model's performance across different LLM benchmarks.
 <br><br>
 
 | Metric               |    QW8B.1 |     QW32B.1 |   QW72B.1 |   Llama3 8B.1 |   Llama3 70B.1 |   DeepseekR1_70B.1 |
@@ -104,7 +111,7 @@
 | Inter macro-F1       |  0.1825   |  0.139      | 0.079     |     0.275     |       0.153    |           0.139    |
 | Final macro-F1       |  0.5215   |  0.533      | 0.56      |     0.456     |       0.456    |           0.458    |
 
-**Table 5.2** AutoToM's performance across different LLM benchmarks.
+**Table 6.2** AutoToM's performance across different LLM benchmarks.
 <br><br>
 
 | Metric               |   QW8B.2 |   QW32B.2 |   QW72B.2 |   Llama3 8B.2 |   Llama3 70B.2 |   DeepseekR1_70B.2 |
@@ -128,7 +135,7 @@
 | Inter macro-F1       | 0.15223  |  0.157115 |  0.187496 |      0.345842 |       0.157115 |           0.317    |
 | Final macro-F1       | 0.618958 |  0.65084  |  0.718669 |      0.619347 |       0.599893 |           0.672064 |
 
-**Table 5.3** Reconciliation's performance across different LLM benchmarks.
+**Table 6.3** Reconciliation's performance across different LLM benchmarks.
 <br><br>
 
 | Metric               |   QW8B.3 |   QW32B.3 |   QW72B.3 |   Llama3 8B.3 |   Llama3 70B.3 |   DeepseekR1_70B.3 |
@@ -152,7 +159,7 @@
 | Inter macro-F1       | 0.1629   |  0.1182   |  0.1766   |      0.1433   |       0.1182   |           0.2287   |
 | Final macro-F1       | 0.4079   |  0.4079   |  0.4079   |      0.4079   |       0.4079   |           0.4204   |
 
-**Table 5.4** Plain LLM's performance across different LLM benchmarks.
+**Table 6.4** Plain LLM's performance across different LLM benchmarks.
 <br><br>
 
 | Metric               |   QW8B.4 |   QW32B.4 |   QW72B.4 |   Llama3 8B.4 |   Llama3 70B.4 |   DeepseekR1_70B.4 |
@@ -176,4 +183,4 @@
 | Inter macro-F1       | 0.4104   |  0.4492   |  0.3409   |      0.462    |       0.4488   |           0.4221   |
 | Final macro-F1       | 0.7741   |  0.6556   |  0.5448   |      0.6249   |       0.6964   |           0.6016   |
 
-**Table 5.5** FLARE's performance across different LLM benchmarks.
+**Table 6.5** FLARE's performance across different LLM benchmarks.
