@@ -101,7 +101,7 @@
 | Final action acc     | 0.9157       | 0.8383       | 0.8567                 | 0.9128             | 0.8735        |
 
 **Table 6.** Comparison across prompting strategies. *Single beliefs are evaluated using Spearman correlation; pairwise results report Spearman correlation and corresponding p-values.*
-
+<br><br>
 
 
 ![alt text](attention_weights_heatmaps.png)
