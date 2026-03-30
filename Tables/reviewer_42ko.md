@@ -18,7 +18,7 @@
 | Final action acc | 0.9041 | 0.914     | 0.9157                 | 0.8683     | 0.8414     |
 
 **Table 1.** Ablation study on the number of beliefs $K \in \{2,4,6,10,15\}$. Single beliefs are evaluated using Spearman correlation with corresponding p-values; pairwise results report Spearman correlation and p-values.
-<br>
+<br><br>
 
 |                | First person | Few-shots prompting | CoT prompting | Third person |
 |----------------|-------------|---------------------|--------------|--------------|
