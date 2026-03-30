@@ -47,6 +47,7 @@
 | Pairwise p value     | 6.91E-03     | 1.32E-01     | 3.67E-03               | 1.41E-02           | 1.36E-01      |
 | Action acc           | 0.8443       | 0.8439       | 0.8712                 | 0.8932             | 0.8057        |
 | Final action acc     | 0.9157       | 0.8383       | 0.8567                 | 0.9128             | 0.8735        |
+
 **Table 3.** Comparison across prompting strategies. *Single beliefs are evaluated using Spearman correlation; pairwise results report Spearman correlation and corresponding p-values.*
 <br><br>
 
