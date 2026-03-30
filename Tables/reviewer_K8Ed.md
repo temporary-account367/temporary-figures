@@ -81,7 +81,6 @@
 **Table 5.** Ablation on ELBO and factor graph structure.
 <br><br>
 
-[See Figure](Tables/new_fig1.pdf)
 
 | Metric               |     QW8B |    QW32B |    QW72B | Llama3 8B   |   Llama3 70B |   DeepseekR1_70B |
 |:---------------------|---------:|---------:|---------:|:------------|-------------:|-----------------:|
