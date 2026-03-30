@@ -51,6 +51,11 @@
 **Table 3.** Comparison across prompting strategies. *Single beliefs are evaluated using Spearman correlation; pairwise results report Spearman correlation and corresponding p-values.*
 <br><br>
 
+![alt text](new_fig1.png)
+**Fig 1** Revised Figure 1 in the paper 
+<br><br> 
+
+
 | Metric               |     QW8B |    QW32B |    QW72B | Llama3 8B   |   Llama3 70B |   DeepseekR1_70B |
 |:---------------------|---------:|---------:|---------:|:------------|-------------:|-----------------:|
 | Belief 0             | 0.3311   | 0.3453   | 0.4077   | 0.349       |     0.3395   |         0.4067   |
