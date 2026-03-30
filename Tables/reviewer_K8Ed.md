@@ -229,26 +229,26 @@
 **Table 7.5** FLARE's performance across different LLM benchmarks.
 <br><br>
 
-| Methods | Our Model (6 beliefs) | Beliefs semantic flipped |
-|--------|----------------------|--------------------------|
-| Belief 0 | 0.3311 | 0.3395 |
-| Belief 1 | 0.4099 | 0.3983 |
-| Belief 2 | 0.2952 | -0.259 |
-| Belief 3 | 0.1848 | -0.132 |
-| Belief 4 | 0.3757 | 0.2663 |
-| Belief 5 | 0.3824 | 0.3006 |
-| p value 0 | 3.27E-06 | 1.76E-06 |
-| p value 1 | 4.73E-09 | 1.38E-08 |
-| p value 2 | 3.72E-05 | 3.16E-04 |
-| p value 3 | 1.09E-02 | 7.03E-02 |
-| p value 4 | 9.98E-08 | 2.12E-04 |
-| p value 5 | 5.64E-08 | 2.64E-05 |
-| Pairwise correlation | 0.6643 | 6.15E-01 |
-| Pairwise p value | 6.91E-03 | 1.48E-02 |
-| Action acc | 0.8443 | 8.68E-01 |
-| Final action acc | 0.9157 | 8.47E-01 |
+| Methods               | Tau=15  | Tau=3   | Tau=0   |
+|----------------------|--------|--------|--------|
+| Belief 0             | 0.3311 | 0.3395 | -0.3246 |
+| Belief 1             | 0.4099 | 0.3983 | -0.3294 |
+| Belief 2             | 0.2952 | -0.259 | -0.2545 |
+| Belief 3             | 0.1848 | -0.132 | -0.234  |
+| Belief 4             | 0.3757 | 0.2663 | -0.3395 |
+| Belief 5             | 0.3824 | 0.3006 | -0.3221 |
+| p value 0            | 3.27E-06 | 1.76E-06 | 5.19E-06 |
+| p value 1            | 4.73E-09 | 1.38E-08 | 3.69E-06 |
+| p value 2            | 3.72E-05 | 3.16E-04 | 4.09E-04 |
+| p value 3            | 1.09E-02 | 7.03E-02 | 1.19E-03 |
+| p value 4            | 9.98E-08 | 2.12E-04 | 1.77E-06 |
+| p value 5            | 5.64E-08 | 2.64E-05 | 6.20E-06 |
+| Pairwise correlation | 0.6643 | 6.15E-01 | 0.6929 |
+| Pairwise p value     | 6.91E-03 | 1.48E-02 | 4.19E-03 |
+| Action acc           | 0.8443 | 8.68E-01 | 0.8695 |
+| Final action acc     | 0.9157 | 8.47E-01 | 8.56E-01 |
 
-**Table 8**. Results on modeling beliefs as continuous variables.
+**Table 8**. Results on multiple tau.
 <br><br>
 
 
