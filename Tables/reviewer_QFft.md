@@ -1,7 +1,7 @@
 | Methods | Our Model (6 beliefs) | 10 beliefs | 15 beliefs | 6 beliefs mean field | 6 beliefs MCMC | 10 beliefs mean field | 10 beliefs MCMC | 15 beliefs mean field | 15 beliefs MCMC |
 |--------|----------------------|------------|------------|----------------------|----------------|----------------------|----------------|----------------------|----------------|
 | Intermediate Action acc | 0.8443 | - | - | 0.824 | 0.8223 | - | - | - | - |
-| Final action acc | 0.9157 | - | - | 0.9167 | 0.9204 | - | - | - | - |
+| Final Action acc | 0.9157 | - | - | 0.9167 | 0.9204 | - | - | - | - |
 | Belief Inference Time (s) | 0.003031 | 0.003165 | 0.003718 | 0.001569 | 0.018991 | 0.001895 | 0.031219 | 0.002751 | 0.043742 |
 
 
