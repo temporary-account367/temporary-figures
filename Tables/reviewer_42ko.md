@@ -1,0 +1,49 @@
+|                | 2 beliefs | 4 beliefs | Our Model (6 beliefs) | 10 beliefs | 15 beliefs |
+|----------------|----------|-----------|------------------------|------------|------------|
+| Belief 0       | -        | 0.3187    | 0.3311                 | 0.324      | 0.3193     |
+| Belief 1       | -        | 0.4067    | 0.4099                 | 0.3933     | 0.2915     |
+| Belief 2       | 0.2637   | 0.1795    | 0.2952                 | 0.2619     | 0.2335     |
+| Belief 3       | 0.3315   | 0.11      | 0.1848                 | 0.1782     | 0.2632     |
+| Belief 4       | -        | -         | 0.3757                 | 0.3442     | 0.305      |
+| Belief 5       | -        | -         | 0.3824                 | 0.3748     | 0.3271     |
+| p value 0      | -        | 7.83E-06  | 3.27E-06               | 5.43E-06   | 7.523E-06  |
+| p value 1      | -        | 6.33E-09  | 4.73E-09               | 2.16E-08   | 4.695E-05  |
+| p value 2      | 2.47E-04 | 1.35E-02  | 3.72E-05               | 2.73E-04   | 1.221E-03  |
+| p value 3      | 3.16E-06 | 1.32E-01  | 1.09E-02               | 1.42E-02   | 2.529E-04  |
+| p value 4      | -        | -         | 9.98E-08               | 1.24E-06   | 1.982E-05  |
+| p value 5      | -        | -         | 5.64E-08               | 1.08E-07   | 4.348E-06  |
+| Pairwise correlation | -  | -         | 0.6643                 | 0.7571     | 0.7464     |
+| Pairwise p value     | -  | -         | 6.91E-03               | 1.08E-03   | 1.39E-03   |
+| Action acc     | 0.618    | 0.8349    | 0.8443                 | 0.7981     | 0.5973     |
+| Final action acc | 0.9041 | 0.914     | 0.9157                 | 0.8683     | 0.8414     |
+
+**Table 1.** Ablation study on the number of beliefs $K \in \{2,4,6,10,15\}$. Single beliefs are evaluated using Spearman correlation with corresponding p-values; pairwise results report Spearman correlation and p-values.
+
+
+|                | First person | Few-shots prompting | CoT prompting | Third person |
+|----------------|-------------|---------------------|--------------|--------------|
+| Belief 0       | 0.3311      | 0.3638              | 0.3495       | 0.3207       |
+| Belief 1       | 0.4099      | 0.4021              | 0.4055       | 0.4241       |
+| Belief 2       | 0.2952      | 0.2478              | 0.2396       | 0.1046       |
+| Belief 3       | 0.1848      | 0.1747              | 0.2083       | 0.1029       |
+| Belief 4       | 0.3757      | 0.3614              | 0.3223       | 0.3329       |
+| Belief 5       | 0.3824      | 0.3551              | 0.3327       | 0.3241       |
+| p value 0      | 3.27E-06    | 2.67E-07            | 8.25E-07     | 6.83E-06     |
+| p value 1      | 4.73E-09    | 9.76E-09            | 7.10E-09     | 1.20E-09     |
+| p value 2      | 3.72E-05    | 5.85E-04            | 8.97E-04     | 1.52E-01     |
+| p value 3      | 1.09E-02    | 1.62E-02            | 4.02E-03     | 1.59E-01     |
+| p value 4      | 9.98E-08    | 3.24E-07            | 6.12E-06     | 2.86E-06     |
+| p value 5      | 5.64E-08    | 5.34E-07            | 2.92E-06     | 5.37E-06     |
+| Pairwise correlation | 0.6643 | 0.6179             | 0.4036       | 0.4071       |
+| Pairwise p value     | 6.91E-03 | 1.41E-02         | 1.36E-01     | 1.32E-01     |
+| Intermediate Action acc     | 0.8443      | 0.8932              | 0.8057       | 0.8439       |
+| Final action acc | 0.9157    | 0.9128              | 0.8735       | 0.8383       |
+
+**Table 2.** Comparison across prompting strategies. *Single beliefs are evaluated using Spearman correlation; pairwise results report Spearman correlation and corresponding p-values.*
+
+| Metric           | BigToM | Our Model (Qwen 8B) | Our Model (Llama3 70B) | AutoToM (Qwen 8B) | AutoToM (Llama 70B) |
+|------------------|--------|----------------------|-------------------------|-------------------|---------------------|
+| Action accuracy  | 0.825  | 0.86                 | 0.86                    | 0.7               | 0.87                |
+| Belief accuracy  | 0.6125 | 0.6375               | 0.6375                  | 0.695             | 0.975               |
+
+**Table 3.** Comparison our model with ToM method AutoToM on BigToM benchmark.
