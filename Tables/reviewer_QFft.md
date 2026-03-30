@@ -14,9 +14,48 @@
 | p value 5 | 5.64E-08 | 1.08E-07 | 4.348E-06 | 1.25E-06 | 3.32E-07 | 1.31E-04 | 3.24E-06 | 6.02E-07 | 1.95E-05 |
 | Pairwise correlation | 0.6643 | 0.7571 | 0.7464 | 0.7 | 0.6821 | 0.6214 | 0.7321 | 0.5929 | 0.7464 |
 | Pairwise p value | 6.91E-03 | 1.08E-03 | 1.39E-03 | 3.67E-03 | 5.09E-03 | 1.34E-02 | 1.91E-03 | 1.99E-02 | 1.39E-03 |
-| Action acc | 0.8443 | 0.7981 | 0.5973 | 0.824 | 0.8223 | 0.5846 | 0.5865 | 0.595 | 0.585 |
-| Final action acc | 0.9157 | 0.8683 | 0.8414 | 0.9167 | 0.9204 | 0.848 | 0.8476 | 0.8706 | 0.8224 |
 | Belief Inference Time (s) | 0.003031 | 0.003165 | 0.003718 | 0.001569 | 0.018991 | 0.001895 | 0.031219 | 0.002751 | 0.043742 |
 
 **Tabel 1.** Extend the number of beliefs to K=10,15, and test the approximation methods.
 
+| Metric                | Our Model | Continuous |
+|----------------------|----------:|-----------:|
+| Belief 0             | 0.3311    | 0.3334     |
+| Belief 1             | 0.4099    | 0.4000     |
+| Belief 2             | 0.2952    | 0.3117     |
+| Belief 3             | 0.1848    | 0.2385     |
+| Belief 4             | 0.3757    | 0.4099     |
+| Belief 5             | 0.3824    | 0.3778     |
+| p value 0            | 3.27E-06  | 2.76E-06   |
+| p value 1            | 4.73E-09  | 1.18E-08   |
+| p value 2            | 3.72E-05  | 1.27E-05   |
+| p value 3            | 1.09E-02  | 9.49E-04   |
+| p value 4            | 9.98E-08  | 4.71E-09   |
+| p value 5            | 5.64E-08  | 8.34E-08   |
+| Pairwise correlation | 0.6643    | 0.6750     |
+| Pairwise p value     | 6.91E-03  | 5.76E-03   |
+| Action acc           | 0.8443    | 0.8044     |
+| Final action acc     | 0.9157    | 0.8576     |
+
+**Tabel 2.** Results on modeling beliefs as continuous intensity variables
+
+|                | First person | Few-shots prompting | CoT prompting | Third person |
+|----------------|-------------|---------------------|--------------|--------------|
+| Belief 0       | 0.3311      | 0.3638              | 0.3495       | 0.3207       |
+| Belief 1       | 0.4099      | 0.4021              | 0.4055       | 0.4241       |
+| Belief 2       | 0.2952      | 0.2478              | 0.2396       | 0.1046       |
+| Belief 3       | 0.1848      | 0.1747              | 0.2083       | 0.1029       |
+| Belief 4       | 0.3757      | 0.3614              | 0.3223       | 0.3329       |
+| Belief 5       | 0.3824      | 0.3551              | 0.3327       | 0.3241       |
+| p value 0      | 3.27E-06    | 2.67E-07            | 8.25E-07     | 6.83E-06     |
+| p value 1      | 4.73E-09    | 9.76E-09            | 7.10E-09     | 1.20E-09     |
+| p value 2      | 3.72E-05    | 5.85E-04            | 8.97E-04     | 1.52E-01     |
+| p value 3      | 1.09E-02    | 1.62E-02            | 4.02E-03     | 1.59E-01     |
+| p value 4      | 9.98E-08    | 3.24E-07            | 6.12E-06     | 2.86E-06     |
+| p value 5      | 5.64E-08    | 5.34E-07            | 2.92E-06     | 5.37E-06     |
+| Pairwise correlation | 0.6643 | 0.6179             | 0.4036       | 0.4071       |
+| Pairwise p value     | 6.91E-03 | 1.41E-02         | 1.36E-01     | 1.32E-01     |
+| Intermediate Action acc     | 0.8443      | 0.8932              | 0.8057       | 0.8439       |
+| Final action acc | 0.9157    | 0.9128              | 0.8735       | 0.8383       |
+
+**Table 3.** Comparison across prompting strategies. *Single beliefs are evaluated using Spearman correlation; pairwise results report Spearman correlation and corresponding p-values.*
