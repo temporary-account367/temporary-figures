@@ -4,8 +4,8 @@
 | Final Action acc | 0.9157 | - | - | 0.9167 | 0.9204 | - | - | - | - |
 | Belief Inference Time (s) | 0.003031 | 0.003165 | 0.003718 | 0.001569 | 0.018991 | 0.001895 | 0.031219 | 0.002751 | 0.043742 |
 
-
 **Tabel 1.** Extend the number of beliefs to K=10,15, and test the approximation methods.
+<br><br><br>
 
 | Metric                | Our Model | Continuous |
 |----------------------|----------:|-----------:|
