@@ -81,6 +81,29 @@
 **Table 5.** Ablation on ELBO and factor graph structure.
 <br><br>
 
+|                      | First person | Third person | Probabilistic prompting | Few-shots prompting | CoT prompting |
+|----------------------|-------------:|-------------:|------------------------:|--------------------:|--------------:|
+| Belief 0             | 0.3311       | 0.3207       | 0.3588                 | 0.3638             | 0.3495        |
+| Belief 1             | 0.4099       | 0.4241       | 0.4101                 | 0.4021             | 0.4055        |
+| Belief 2             | 0.2952       | 0.1046       | 0.2504                 | 0.2478             | 0.2396        |
+| Belief 3             | 0.1848       | 0.1029       | 0.2628                 | 0.1747             | 0.2083        |
+| Belief 4             | 0.3757       | 0.3329       | 0.3604                 | 0.3614             | 0.3223        |
+| Belief 5             | 0.3824       | 0.3241       | 0.3680                 | 0.3551             | 0.3327        |
+| p value 0            | 3.27E-06     | 6.83E-06     | 3.98E-07               | 2.67E-07           | 8.25E-07      |
+| p value 1            | 4.73E-09     | 1.20E-09     | 4.62E-09               | 9.76E-09           | 7.10E-09      |
+| p value 2            | 3.72E-05     | 1.52E-01     | 5.10E-04               | 5.85E-04           | 8.97E-04      |
+| p value 3            | 1.09E-02     | 1.59E-01     | 2.59E-04               | 1.62E-02           | 4.02E-03      |
+| p value 4            | 9.98E-08     | 2.86E-06     | 3.50E-07               | 3.24E-07           | 6.12E-06      |
+| p value 5            | 5.64E-08     | 5.37E-06     | 1.89E-07               | 5.34E-07           | 2.92E-06      |
+| Pairwise correlation | 0.6643       | 0.4071       | 0.7000                 | 0.6179             | 0.4036        |
+| Pairwise p value     | 6.91E-03     | 1.32E-01     | 3.67E-03               | 1.41E-02           | 1.36E-01      |
+| Action acc           | 0.8443       | 0.8439       | 0.8712                 | 0.8932             | 0.8057        |
+| Final action acc     | 0.9157       | 0.8383       | 0.8567                 | 0.9128             | 0.8735        |
+
+**Table 6.** Comparison across prompting strategies. *Single beliefs are evaluated using Spearman correlation; pairwise results report Spearman correlation and corresponding p-values.*
+
+
+
 ![alt text](attention_weights_heatmaps.png)
 **Fig 1** Attention Matrix Weights Analysis
 <br><br>
@@ -107,7 +130,7 @@
 | Inter macro-F1       | 0.796    | 0.931    | 0.7855   | 0.5842      |     0.9456   |         0.9133   |
 | Final macro-F1       | 0.9023   | 0.9368   | 0.9      | 0.8392      |     0.9151   |         0.95     |
 
-**Table 6.1** Our Model's performance across different LLM benchmarks.
+**Table 7.1** Our Model's performance across different LLM benchmarks.
 <br><br>
 
 | Metric               |    QW8B.1 |     QW32B.1 |   QW72B.1 |   Llama3 8B.1 |   Llama3 70B.1 |   DeepseekR1_70B.1 |
@@ -131,7 +154,7 @@
 | Inter macro-F1       |  0.1825   |  0.139      | 0.079     |     0.275     |       0.153    |           0.139    |
 | Final macro-F1       |  0.5215   |  0.533      | 0.56      |     0.456     |       0.456    |           0.458    |
 
-**Table 6.2** AutoToM's performance across different LLM benchmarks.
+**Table 7.2** AutoToM's performance across different LLM benchmarks.
 <br><br>
 
 | Metric               |   QW8B.2 |   QW32B.2 |   QW72B.2 |   Llama3 8B.2 |   Llama3 70B.2 |   DeepseekR1_70B.2 |
@@ -155,7 +178,7 @@
 | Inter macro-F1       | 0.15223  |  0.157115 |  0.187496 |      0.345842 |       0.157115 |           0.317    |
 | Final macro-F1       | 0.618958 |  0.65084  |  0.718669 |      0.619347 |       0.599893 |           0.672064 |
 
-**Table 6.3** Reconciliation's performance across different LLM benchmarks.
+**Table 7.3** Reconciliation's performance across different LLM benchmarks.
 <br><br>
 
 | Metric               |   QW8B.3 |   QW32B.3 |   QW72B.3 |   Llama3 8B.3 |   Llama3 70B.3 |   DeepseekR1_70B.3 |
@@ -179,7 +202,7 @@
 | Inter macro-F1       | 0.1629   |  0.1182   |  0.1766   |      0.1433   |       0.1182   |           0.2287   |
 | Final macro-F1       | 0.4079   |  0.4079   |  0.4079   |      0.4079   |       0.4079   |           0.4204   |
 
-**Table 6.4** Plain LLM's performance across different LLM benchmarks.
+**Table 7.4** Plain LLM's performance across different LLM benchmarks.
 <br><br>
 
 | Metric               |   QW8B.4 |   QW32B.4 |   QW72B.4 |   Llama3 8B.4 |   Llama3 70B.4 |   DeepseekR1_70B.4 |
@@ -203,4 +226,28 @@
 | Inter macro-F1       | 0.4104   |  0.4492   |  0.3409   |      0.462    |       0.4488   |           0.4221   |
 | Final macro-F1       | 0.7741   |  0.6556   |  0.5448   |      0.6249   |       0.6964   |           0.6016   |
 
-**Table 6.5** FLARE's performance across different LLM benchmarks.
+**Table 7.5** FLARE's performance across different LLM benchmarks.
+<br><br>
+
+| Methods | Our Model (6 beliefs) | Beliefs semantic flipped |
+|--------|----------------------|--------------------------|
+| Belief 0 | 0.3311 | 0.3395 |
+| Belief 1 | 0.4099 | 0.3983 |
+| Belief 2 | 0.2952 | -0.259 |
+| Belief 3 | 0.1848 | -0.132 |
+| Belief 4 | 0.3757 | 0.2663 |
+| Belief 5 | 0.3824 | 0.3006 |
+| p value 0 | 3.27E-06 | 1.76E-06 |
+| p value 1 | 4.73E-09 | 1.38E-08 |
+| p value 2 | 3.72E-05 | 3.16E-04 |
+| p value 3 | 1.09E-02 | 7.03E-02 |
+| p value 4 | 9.98E-08 | 2.12E-04 |
+| p value 5 | 5.64E-08 | 2.64E-05 |
+| Pairwise correlation | 0.6643 | 6.15E-01 |
+| Pairwise p value | 6.91E-03 | 1.48E-02 |
+| Action acc | 0.8443 | 8.68E-01 |
+| Final action acc | 0.9157 | 8.47E-01 |
+
+**Table 8**. Results on modeling beliefs as continuous variables.
+
+
