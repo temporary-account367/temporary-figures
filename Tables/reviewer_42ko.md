@@ -1,23 +1,23 @@
-|                | 2 beliefs | 4 beliefs | Our Model (6 beliefs) | 10 beliefs | 15 beliefs |
-|----------------|----------|-----------|------------------------|------------|------------|
-| Belief 0       | -        | 0.3187    | 0.3311                 | 0.324      | 0.3193     |
-| Belief 1       | -        | 0.4067    | 0.4099                 | 0.3933     | 0.2915     |
-| Belief 2       | 0.2637   | 0.1795    | 0.2952                 | 0.2619     | 0.2335     |
-| Belief 3       | 0.3315   | 0.11      | 0.1848                 | 0.1782     | 0.2632     |
-| Belief 4       | -        | -         | 0.3757                 | 0.3442     | 0.305      |
-| Belief 5       | -        | -         | 0.3824                 | 0.3748     | 0.3271     |
-| p value 0      | -        | 7.83E-06  | 3.27E-06               | 5.43E-06   | 7.523E-06  |
-| p value 1      | -        | 6.33E-09  | 4.73E-09               | 2.16E-08   | 4.695E-05  |
-| p value 2      | 2.47E-04 | 1.35E-02  | 3.72E-05               | 2.73E-04   | 1.221E-03  |
-| p value 3      | 3.16E-06 | 1.32E-01  | 1.09E-02               | 1.42E-02   | 2.529E-04  |
-| p value 4      | -        | -         | 9.98E-08               | 1.24E-06   | 1.982E-05  |
-| p value 5      | -        | -         | 5.64E-08               | 1.08E-07   | 4.348E-06  |
-| Pairwise correlation | -  | -         | 0.6643                 | 0.7571     | 0.7464     |
-| Pairwise p value     | -  | -         | 6.91E-03               | 1.08E-03   | 1.39E-03   |
-| Action acc     | 0.618    | 0.8349    | 0.8443                 | 0.7981     | 0.5973     |
-| Final action acc | 0.9041 | 0.914     | 0.9157                 | 0.8683     | 0.8414     |
+|                | 2 beliefs | 4 beliefs | Our Model (6 beliefs) | 
+|----------------|----------|-----------|------------------------|
+| Belief 0       | -        | 0.3187    | 0.3311                 | 
+| Belief 1       | -        | 0.4067    | 0.4099                 | 
+| Belief 2       | 0.2637   | 0.1795    | 0.2952                 | 
+| Belief 3       | 0.3315   | 0.11      | 0.1848                 | 
+| Belief 4       | -        | -         | 0.3757                 | 
+| Belief 5       | -        | -         | 0.3824                 | 
+| p value 0      | -        | 7.83E-06  | 3.27E-06               | 
+| p value 1      | -        | 6.33E-09  | 4.73E-09               |
+| p value 2      | 2.47E-04 | 1.35E-02  | 3.72E-05               | 
+| p value 3      | 3.16E-06 | 1.32E-01  | 1.09E-02               | 
+| p value 4      | -        | -         | 9.98E-08               | 
+| p value 5      | -        | -         | 5.64E-08               | 
+| Pairwise correlation | -  | -         | 0.6643                 | 
+| Pairwise p value     | -  | -         | 6.91E-03               | 
+| Action acc     | 0.618    | 0.8349    | 0.8443                 | 
+| Final action acc | 0.9041 | 0.914     | 0.9157                 | 
 
-**Table 1.** Ablation study on the number of beliefs $K \in \{2,4,6,10,15\}$. Single beliefs are evaluated using Spearman correlation with corresponding p-values; pairwise results report Spearman correlation and p-values.
+**Table 1.** Ablation study on the number of beliefs $K \in \{2,4,6\}$. Single beliefs are evaluated using Spearman correlation with corresponding p-values; pairwise results report Spearman correlation and p-values.
 <br><br>
 
 |                | First person | Few-shots prompting | CoT prompting | Third person |
