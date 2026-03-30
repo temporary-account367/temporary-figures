@@ -83,6 +83,7 @@
 
 ![alt text](attention_weights_heatmaps.png)
 **Fig 1** Attention Matrix Weights Analysis
+<br><br>
 
 
 | Metric               |     QW8B |    QW32B |    QW72B | Llama3 8B   |   Llama3 70B |   DeepseekR1_70B |
