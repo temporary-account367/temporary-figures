@@ -105,7 +105,7 @@
 
 
 ![alt text](attention_weights_heatmaps.png)
-**Fig 1** Attention Matrix Weights Analysis
+**Fig 1** Attention Matrix Weights on four intermediate actions and 2 final actions
 <br><br>
 
 
